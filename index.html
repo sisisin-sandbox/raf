@@ -1,0 +1,20 @@
+<html>
+
+<head>
+  <title>hoge</title>
+</head>
+
+<body>
+  <div class="aaa">aaa</div>
+  <script type="text/javascript">
+    const a = document.querySelector('.aaa');
+    let margin = 0;
+    function moveAaa() {
+      a.setAttribute('style', `margin-top: ${margin++}px;`);
+      requestAnimationFrame(moveAaa);
+    }
+    moveAaa();
+  </script>
+</body>
+
+</html>
